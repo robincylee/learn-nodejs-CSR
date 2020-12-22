@@ -1,4 +1,4 @@
-# Architecture in Node JS wirh Controller, Service and Repository
+# Architecture in Node JS with Controller, Service and Repository
 Clean nodejs archictecture
 ## Learn
 - Write js between controller,service,repo
