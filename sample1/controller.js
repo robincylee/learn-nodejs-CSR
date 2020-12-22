@@ -4,10 +4,10 @@ const service = require('./service')
 module.exports = get_func;
 
 function get_func(req,res){ //get request
-    service.get_func_arg(req) //pass request to designated service
-    .then(
-        ret=>{
-            res.json(ret)   //return request response (success,fail,result)
-        }
-    )
+    service.get_func_arg(req, //pass request to designated service 
+        function (err, params){ //with callback
+        if(err){throw err}
+        res.json(params)
+    }) 
+    
 }
